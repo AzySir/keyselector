@@ -1,0 +1,11 @@
+#!/bin/bash
+RESULT=$(./keyselectorgo "${@}")
+
+if [ "$1" = "set" ]; then
+    if [[ ! -z "$2" ]]; then 
+        eval "$RESULT"
+        if [ "${KEY}" = "${2}" ]; then
+            echo -e "\033[0;32m${2} key successfully set!"
+        fi
+    fi
+fi
