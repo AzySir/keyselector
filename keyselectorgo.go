@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"keyselectorgo/cli"
+	"keyselectorgo/utils"
 	"log"
 	"os"
 
@@ -34,7 +35,8 @@ Example:
 
 				`)
 		}
-		fmt.Printf("export KEY=%s", cli.Set(args[2]))
+		// log.Printf("export KEY=%s%s", utils.GetWorkingDirectory(), cli.Set(args[2]))
+		fmt.Printf("export KEY=%s%s", utils.GetWorkingDirectory(), cli.Set(args[2]))
 	default:
 		cli.Help()
 	}
