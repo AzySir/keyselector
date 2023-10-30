@@ -1,11 +1,13 @@
-module keyselectorgo
+module keyselector
 
 go 1.21.3
 
-require github.com/jedib0t/go-pretty v4.3.0+incompatible
+require (
+	github.com/TwiN/go-color v1.4.1
+	github.com/jedib0t/go-pretty v4.3.0+incompatible
+)
 
 require (
-	github.com/TwiN/go-color v1.4.1 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/go-openapi/errors v0.20.3 // indirect
 	github.com/go-openapi/strfmt v0.21.7 // indirect

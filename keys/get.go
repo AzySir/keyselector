@@ -2,7 +2,7 @@ package keys
 
 import (
 	"fmt"
-	"keyselectorgo/utils"
+	"keyselector/utils"
 	"os"
 )
 

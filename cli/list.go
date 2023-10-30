@@ -1,8 +1,8 @@
 package cli
 
 import (
-	"keyselectorgo/table"
-	"keyselectorgo/utils"
+	"keyselector/table"
+	"keyselector/utils"
 	"log"
 )
 
