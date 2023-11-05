@@ -24,6 +24,8 @@ func realMain(args []string) {
 		cli.List()
 	case "set":
 		cli.Set(args)
+	case "get":
+		cli.Get(args)
 	default:
 		cli.Help()
 	}

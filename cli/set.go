@@ -27,7 +27,7 @@ keyselector set personal_ssh
 func output(key string) {
 	_, err := keys.GetKey(key)
 	if err != nil {
-		log.Fatalf("[ERROR] %s does NOT exist", key)
+		log.Fatalf(color.Red+"[ERROR] %s does NOT exist", key)
 	}
 	fmt.Printf("export KEY=%s%s", utils.GetWorkingDirectory(), key)
 }

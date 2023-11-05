@@ -15,7 +15,7 @@ func GetWorkingDirectory() string {
 }
 
 func GetAppDirectory() string {
-	path, err := os.Getwd()
+	path, err := os.Executable()
 	if err != nil {
 		log.Println(err)
 	}
